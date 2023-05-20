@@ -15,6 +15,7 @@ public class BaseTest {
         driver = DriverFactory.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://seleniumdemo.com/");
+        driver.manage().window().maximize();
     }
 
     @AfterMethod

@@ -1,15 +1,13 @@
 package pl.testeroprogramowania.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 public class LoggedUserPage {
-    @FindBy(xpath = "//h1[@class='entry-title']")
-    private WebElement entryTitle;
+    @FindBy(linkText = "Dashboard")
+    private WebElement dashboardLink;
 
     private WebDriver driver;
 
@@ -18,7 +16,7 @@ public class LoggedUserPage {
         this.driver = driver;
     }
 
-    public WebElement getEntryTitle() {
-        return entryTitle;
+    public WebElement getDashboardLink() {
+        return dashboardLink;
     }
 }

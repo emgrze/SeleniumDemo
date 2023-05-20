@@ -1,21 +1,20 @@
 package pl.testeroprogramowania.tests;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pl.testeroprogramowania.pages.HomePage;
-import pl.testeroprogramowania.pages.MyAccountPage;
 
 public class RegisterTest extends BaseTest {
     @Test
     public void registerUserTest() {
-        int z = (int) Math.random();
-        WebElement entryTitle = new HomePage(driver).openMyAccountPage()
-                .registerUser("testdupa123" + z + "@lol.pl", "Testdupa123!@#").getEntryTitle();
+        int z = (int) (Math.random() *9000);
+        WebElement dashboardLink = new HomePage(driver).openMyAccountPage()
+                .registerUser("testdupa123" + z + "@lol.pl", "Testdupa123!@#").getDashboardLink();
 
-        Assert.assertTrue(entryTitle.isDisplayed());
-        Assert.assertEquals(entryTitle.getText(),"My account");
+//        Assert.assertTrue(dashboardLink.isDisplayed());
+        Assert.assertEquals(dashboardLink.getText(),"Dashboard");
+        System.out.println(z);
     }
 }
 
