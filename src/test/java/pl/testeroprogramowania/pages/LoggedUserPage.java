@@ -1,25 +1,24 @@
 package pl.testeroprogramowania.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
-public class HomePage {
-    @FindBy (xpath = "//span[text()='My account'][1]")
-    private WebElement myAccountLink;
+public class LoggedUserPage {
+    @FindBy(xpath = "//h1[@class='entry-title']")
+    private WebElement entryTitle;
 
     private WebDriver driver;
 
-    public HomePage (WebDriver driver) {
+    public LoggedUserPage(WebDriver driver) {
         PageFactory.initElements(driver,this);
         this.driver = driver;
     }
 
-    public MyAccountPage openMyAccountPage() {
-        myAccountLink.click();
-        return new MyAccountPage(driver); //WTF czemu nie działa
-
-//        return null;
+    public WebElement getEntryTitle() {
+        return entryTitle;
     }
 }
