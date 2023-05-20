@@ -1,10 +1,11 @@
 package pl.testeroprogramowania.tests;
 
 import org.testng.annotations.Test;
+import pl.testeroprogramowania.pages.HomePage;
 
 public class RegisterTest extends BaseTest {
     @Test
     public void registerUserTest() {
-        System.out.println("Browser test");
+    new HomePage(driver).openMyAccountPage();
     }
 }
