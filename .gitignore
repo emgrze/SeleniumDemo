@@ -1,0 +1,9 @@
+/target/test-classes/pl/testeroprogramowania/tests/BaseTest.class
+/target/test-classes/pl/testeroprogramowania/pages/LoggedUserPage.class
+/target/test-classes/pl/testeroprogramowania/tests/RegisterTest.class
+/target/test-classes/pl/testeroprogramowania/pages/MyAccountPage.class
+/target/test-classes/pl/testeroprogramowania/tests/LogInTest.class
+/target/test-classes/pl/testeroprogramowania/pages/HomePage.class
+/target/test-classes/pl/testeroprogramowania/utils/DriverFactory.class
+/target/
+/.idea/

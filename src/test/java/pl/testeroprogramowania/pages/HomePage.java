@@ -6,13 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
-    @FindBy (xpath = "//span[text()='My account'][1]")
+    @FindBy(xpath = "//span[text()='My account'][1]")
     private WebElement myAccountLink;
 
     private WebDriver driver;
 
-    public HomePage (WebDriver driver) {
-        PageFactory.initElements(driver,this);
+    public HomePage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
         this.driver = driver;
     }
 

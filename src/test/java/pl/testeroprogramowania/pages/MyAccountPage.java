@@ -53,12 +53,12 @@ public class MyAccountPage {
     }
 
     public LoggedUserPage logInValidData(String username, String password) {
-       logIn(username,password);
+        logIn(username, password);
         return new LoggedUserPage(driver);
     }
 
     public MyAccountPage logInInvalidData(String username, String password) {
-        logIn(username,password);
+        logIn(username, password);
         return this;
     }
 
