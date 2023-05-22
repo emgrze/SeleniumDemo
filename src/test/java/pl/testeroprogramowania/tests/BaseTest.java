@@ -13,7 +13,7 @@ public class BaseTest {
     @BeforeMethod               //będziemy uruchamiać metodę setup przed każdą metodą w klasach testowych
     public void setup() {
         driver = DriverFactory.getDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
         driver.get("http://seleniumdemo.com/");
         driver.manage().window().maximize();
     }

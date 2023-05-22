@@ -40,9 +40,9 @@ public class AddressDetailsPage {
     private WebElement billingEmailInput;
 
     @FindBy(id = "order_comments")
-    private WebElement orderCommentsButton;
+    private WebElement orderCommentsInput;
 
-    @FindBy(id = "place_order")
+    @FindBy(xpath = "//button[@data-value='Place order']")
     private WebElement placeOrderButton;
 
     private WebDriver driver;
@@ -74,11 +74,9 @@ public class AddressDetailsPage {
 
         billingEmailInput.sendKeys(customer.getEmail());
 
-        orderCommentsButton.sendKeys(comments);
+        orderCommentsInput.sendKeys(comments);
 
         placeOrderButton.click();
-
-
 
 
         return new OrderDetailsPage(driver);

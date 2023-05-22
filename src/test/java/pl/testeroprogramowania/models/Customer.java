@@ -90,20 +90,17 @@ public class Customer {
         this.email = email;
     }
 
-    private String firstname;
-    private String lastName;
-    private String companyName;
-    private String country;
-    private String address;
-    private String street;
-    private String flatNumber;
-    private String zipcode;
-    private String city;
-    private String phone;
-    private String email;
-
-
-
+    private String firstname = "Bartek";
+    private String lastName = "Testowy";
+    private String companyName = "Google";
+    private String country = "Poland";
+    private String address = "";
+    private String street = "Testowa";
+    private String flatNumber = "21";
+    private String zipcode = "21370";
+    private String city = "Toruń";
+    private String phone = "123123123";
+    private String email = "lol@lol.pl";
 }
 
 
