@@ -23,6 +23,6 @@ public class CheckoutTest extends BaseTest {
                 .fillAddressDetails(customer, "Ship it asap");
 
         Assert.assertEquals(orderDetailsPage.getOrderNotice().getText(),"Thank you. Your order has been received.");
-        Assert.assertEquals(orderDetailsPage.getProductName().getText(),"Java Selenium WebDriver x 1");
+        Assert.assertEquals(orderDetailsPage.getProductName().getText(),"Java Selenium WebDriver × 1");
     }
 }

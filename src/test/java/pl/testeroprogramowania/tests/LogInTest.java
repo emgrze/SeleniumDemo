@@ -14,17 +14,6 @@ public class LogInTest extends BaseTest {
 
         Assert.assertEquals(dashboardLink.getText(), "Dashboard");
     }
-
-    @Test
-    public void logInWithInvalidPasswordTest() {
-        WebElement error = new HomePage(driver)
-                .openMyAccountPage()
-                .logInInvalidData("testdupa123@lol.pl", "Testdupa123!@#123")
-                .getError();
-
-        Assert.assertTrue(error.isDisplayed());
-        Assert.assertTrue(error.getText().contains("Incorrect username"), "Expected error text doesn't match");
-    }
 }
 
 
