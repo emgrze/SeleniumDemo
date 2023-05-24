@@ -21,11 +21,11 @@ public class HomePage {
 
     public MyAccountPage openMyAccountPage() {
         myAccountLink.click();
-        return new MyAccountPage(driver); //WTF czemu nie działa
+        return new MyAccountPage(driver);
     }
 
     public ProductListPage openShopPage() {
         shopLink.click();
-        return new ProductListPage(driver); //WTF czemu nie działa
+        return new ProductListPage(driver);
     }
 }
